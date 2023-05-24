@@ -18,9 +18,30 @@ Below steps for setup express engine app into system :
    vi)  To install Express temporarily and not add it to the dependencies list:
              npm install express --no-save
  
+   *********run app by command : node index.js ( by  entry point file  )***********
 
- Next : 
+ Next :  Set  simple api path by below code  : 
+**********************************************************
+  
+    app.get('/', (req, res) => {
+     res.send('Hello World!')
+    })
 
-   In Prgoress...
+    app.get('/login', (req, res) => {
+      res.send('login api!')
+    })
+
+    app.get('/register', (req, res) => {
+      res.send('register api!')
+    })
+
+    app.get('/getuser', (req, res) => {
+      res.send('getuser api!')
+    })
+
+    app.get('/users', (req, res) => {
+      res.send('users api!')
+    })
    
+************************************************************************
 
